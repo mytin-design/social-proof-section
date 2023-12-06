@@ -1,0 +1,49 @@
+<!doctype html>
+<html x-lang="en-KE">
+    <head>
+        <meta name="robots" content="index, follow">
+        <meta name="charset=UTF-8">
+        <meta name="minimum-scale=2.0">
+        <link rel="icon" href="./bg-pattern-bottom-desktop.svg">
+        <link rel="stylesheet" href="new-fri.css">
+    </head>
+    <body>
+        <h1>FAITH AND FEAR</h1>
+
+    <article>
+        <section>
+            <h1>FAITH</h1>
+            <p>Faith is the substance of the things hoped for. <br>
+            The assurance of the things hoped for.
+        </p>
+        </section>
+        <section class="s-2">
+            <h1>FEAR</h1>
+            <p>Fear is doubt in one's belief system. The unassurance of the things hoped for. Doubt in the the things desired.</p>
+
+        </section>
+    </article>
+
+    <hr>
+    <form action="" id="faithform" method="get">
+        <input type="number" id="no" name="number" placeholder="Faith level">
+        <button type="submit" id="fs" onclick="check()" name="faithButton" value="">Check</button>
+    </form>
+    <output></output>
+    <script src="new-frii.js">
+        const fLevel = document.getElementById('no').value;
+        const btn = document.getElementById('fs');
+        const output = document.getElementsByTagName('output');
+
+        btn.onclick = function check() {
+            if(fLevel !== 100) {
+                output.innerHTML = 'Request denied.';
+            }
+            output.innerHTML = 'Request granted.'
+        }
+
+        check();
+    </script>
+
+    </body>
+</html>

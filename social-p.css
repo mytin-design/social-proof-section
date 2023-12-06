@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    background: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg) center no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+body {
+    margin: 200px auto;
+    width: 70%;
+}
+.first-section {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    padding: 15px;
+}
+
+.heading {
+    width: 30%;
+    font-weight: 700;
+}
+
+.header {
+    font-size: 2rem;
+    color: var(--very-dark-magenta);
+}
+
+.header-text {
+    margin-top: 20px;
+}
+
+.reviews {
+    padding: 20px;
+    border-radius: 8px;
+
+}
+.reviews, .sta {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.stars, .review-text {
+    background-color: var(--dark-grayish-magenta);
+}
+
+.fa-star {
+    color: orange;
+}
+
+.r_two {
+    margin-left: 45px;
+}
+
+.r_three {
+    margin-left: 100px;
+}
+
+.review-text {
+    font-weight: 900;
+}
+
+.rater {
+    width: 70%;
+    display: flex;
+    flex-flow: column;
+
+}
+
+.fas {
+    display: inline-block;
+    background-color: orange;
+}
+
+.second-section {
+    padding: 15px;
+    display: flex;
+    gap: 30px;
+}
+.card {
+    border-radius: 8px;
+    height: 200px;
+    width: 400px;
+    background: var(--very-dark-magenta);
+    color: #fff;
+    padding: 15px;
+}
+
+.card_two {
+    margin-top: 25px;
+}
+
+.card_three {
+    margin-top: 40px;
+}
+
+.profile {
+    display: flex;
+    padding: 10px;
+}
+
+img {
+    height: 50px;
+    border-radius: 50%;
+}
+.name {
+    font-weight: 600;
+}
+.verified {
+    color: var(--soft-pink);
+}
+
+.profile-name {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.reco-text {
+    margin-top: 10px
+}
